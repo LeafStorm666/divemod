@@ -1,0 +1,12 @@
+[
+{
+  "modid": "divemod",
+  "name": "Dive Mod",
+  "description": "Diving gear in minecraft.",
+  "mcversion": "1.7.10",
+  "version": "1.7.10-0.1",
+  "url": "",
+  "authors": ["LeafStorm666"],
+  "credits": "Code by LeafStorm666. Textures by DarkWolves13"
+}
+]
