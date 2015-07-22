@@ -1,6 +1,7 @@
 package com.leafstorm666.divemod;
 
 
+import com.leafstorm666.divemod.config.ConfigHandler;
 import com.leafstorm666.divemod.proxy.IProxy;
 import com.leafstorm666.divemod.reference.Reference;
 
@@ -18,12 +19,14 @@ public class divemod
     @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
     public static IProxy proxy;
 
-    @Mod.Instance("divemod")
+    @Mod.Instance(Reference.MOD_ID)
     public static divemod instance;
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)
-    {}
+    {
+        ConfigHandler.init(event.getSuggestedConfigurationFile());
+    }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event)
